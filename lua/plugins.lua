@@ -1,6 +1,5 @@
 vim.cmd [[packadd packer.nvim]]
 
-
 return require('packer').startup(
 function()
 
@@ -11,8 +10,10 @@ function()
     use 'vim-airline/vim-airline'
     use 'vim-airline/vim-airline-themes'
 
+    -- Add navegation in files
     use 'preservim/nerdtree'
 
+    -- theme
     use 'matsuuu/pinkmare'
 
     use 'tpope/vim-surround'
@@ -27,6 +28,8 @@ function()
       'neoclide/coc.nvim',
       branch = 'release'
     }
+
+    use 'jiangmiao/auto-pairs'
 
 end
 )
